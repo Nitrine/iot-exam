@@ -14,7 +14,7 @@ while(True):
             headers = my_sms.get_headers("API KEY","API SECRET")
             data = '{"message":{"to":"수신자 전화번호","from":"발신자 전화번호","text":"Light on"}}'
 
-            response = requests.post(url, headers=headers, data=dat)
+            response = requests.post(url, headers=headers, data=data)
             print(response.status_code)
             print(response.text)
     time.sleep(60)
